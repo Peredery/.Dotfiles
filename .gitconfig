@@ -1,0 +1,12 @@
+[user]
+	name = Artyom V. Peredery
+	email = artperedery@gmail.com
+[core]
+	autocrlf = input
+	safecrlf = warn
+[init]
+	defaultBranch = master
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
