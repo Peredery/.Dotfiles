@@ -104,7 +104,7 @@ zinit ice pick"you-should-use.plugin.zsh"; zinit load "MichaelAquilina/zsh-you-s
 
 
 # ASDF
-autoload -Uz compinit && compinit
+# autoload -Uz compinit && compinit
 . $HOME/.asdf/asdf.sh
 
 zstyle ':completion:*' menu select
