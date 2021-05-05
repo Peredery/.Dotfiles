@@ -53,24 +53,24 @@ alias glist='for ref in $(git for-each-ref --sort=-committerdate --count=50 --fo
 
 
 #Install ASDF
-if [[ ! -d "/${HOME}/.zinit/bin" ]]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
-fi
-if [[ ! -d "/${HOME}/.asdf" ]]; then
-	git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
-    autoload -Uz compinit && compinit
-    . $HOME/.asdf/asdf.sh
-    asdf update
-    asdf plugin-add nodejs
-    asdf plugin-add ruby
-    asdf plugin-add python
-    asdf install nodejs latest
-    asdf install ruby latest
-    asdf install python latest
-    asdf global nodejs latest
-    asdf global ruby latest
-    asdf global python latest
-fi
+#if [[ ! -d "/${HOME}/.zinit/bin" ]]; then
+#  sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+#fi
+#if [[ ! -d "/${HOME}/.asdf" ]]; then
+#	git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
+#    autoload -Uz compinit && compinit
+#    . $HOME/.asdf/asdf.sh
+#    asdf update
+#    asdf plugin-add nodejs
+#    asdf plugin-add ruby
+#    asdf plugin-add python
+#    asdf install nodejs latest
+#    asdf install ruby latest
+#    asdf install python latest
+#    asdf global nodejs latest
+#    asdf global ruby latest
+#    asdf global python latest
+#fi
 
 #ZINIT SETUP
 
@@ -103,11 +103,9 @@ zinit wait lucid for \
 zinit ice pick"you-should-use.plugin.zsh"; zinit load "MichaelAquilina/zsh-you-should-use"
 
 
-# ASDF
-# autoload -Uz compinit && compinit
-. $HOME/.asdf/asdf.sh
-
 zstyle ':completion:*' menu select
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="/usr/local/sbin:$PATH"
+. $HOME/.asdf/asdf.sh
