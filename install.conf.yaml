@@ -9,6 +9,7 @@
     ~/.gitconfig: git/.gitconfig
     ~/.tmux.conf.local: .tmux.conf.local
     ~/.tmux.conf: .tmux/.tmux.conf
+    ~/.p10k.zsh: .p10k.zsh
 
 - create:
     - ~/downloads

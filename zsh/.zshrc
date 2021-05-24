@@ -39,6 +39,8 @@ export EDITOR='vim'
 
 # ALIAS
 alias reshim="asdf reshim nodejs && asdf reshim ruby && asdf reshim python"
+alias vim="nvim"
+alias vi="nvim"
 # Git
 alias g="git"
 alias gs="git status"
@@ -50,30 +52,6 @@ alias grр="git reset HEAD"
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold yellow)<%an>%Creset' --abbrev-commit --"
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 alias glist='for ref in $(git for-each-ref --sort=-committerdate --count=50 --format="%(refname)" refs/heads/ refs/remotes ); do git log -n1 $ref --pretty=format:"%Cgreen%cr%Creset %C(yellow)%d%Creset %C(bold blue)<%an>%Creset%n" | cat ; done | awk '"'! a["'$0'"]++'"
-
-
-#Install ASDF
-#if [[ ! -d "/${HOME}/.zinit/bin" ]]; then
-#  sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
-#fi
-#if [[ ! -d "/${HOME}/.asdf" ]]; then
-#	git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
-#    autoload -Uz compinit && compinit
-#    . $HOME/.asdf/asdf.sh
-#    asdf update
-#    asdf plugin-add nodejs
-#    asdf plugin-add ruby
-#    asdf plugin-add python
-#    asdf install nodejs latest
-#    asdf install ruby latest
-#    asdf install python latest
-#    asdf global nodejs latest
-#    asdf global ruby latest
-#    asdf global python latest
-#fi
-
-#ZINIT SETUP
-
 
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
