@@ -7,6 +7,7 @@
 - link:
     ~/.zshrc: zsh/.zshrc
     ~/.gitconfig: git/.gitconfig
+    ~/.gitignore: git/.gitignore
     ~/.tmux.conf.local: .tmux.conf.local
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.p10k.zsh: .p10k.zsh
