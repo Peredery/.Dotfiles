@@ -44,6 +44,7 @@ alias vi="nvim"
 # Git
 alias g="git"
 alias gs="git status"
+alias gsw="git switch"
 alias ga="git add"
 alias gc="git checkout"
 alias gd="git diff --color"
